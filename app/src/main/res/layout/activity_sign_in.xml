@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    android:id="@+id/relative"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:shadowColor="#000000"
+        android:text="Sign in"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/signintoconntinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signin"
+        android:layout_marginTop="9dp"
+        android:text="Sign in to continue"
+        android:textSize="15sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/iemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signintoconntinue"
+        android:layout_marginTop="104dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="15sp"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/iemailedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ipasswordedit"
+        android:layout_below="@+id/iemail"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="55dp"
+
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email@example.com"
+            android:inputType="textEmailAddress"
+
+            ></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/ipassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iemail"
+        android:layout_marginTop="77dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="15sp"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ipasswordedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ipassword"
+        android:layout_marginTop="-1dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:errorEnabled="true"
+        app:passwordToggleEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+
+android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ipassword"
+            android:layout_marginTop="2dp"
+            android:ems="5"
+            android:hint="**********"
+            android:inputType="textPassword"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/roundedcorners"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+
+        ></Button>
+
+    <TextView
+        android:id="@+id/iclickabletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignTop="@+id/loginbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="73dp"
+        android:text="Don't have an account? Sign up"
+        android:textSize="15sp"></TextView>
+
+
+
+
+</RelativeLayout>
